@@ -1,7 +1,6 @@
 import { LightningElement, track } from 'lwc';
 
 export default class Calendar extends LightningElement {
-    //@track currentDate = new Date();
     @track year = '2024';
     @track monthName = 'MARCH';
     finalCalendar = [];
