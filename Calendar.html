@@ -1,0 +1,55 @@
+<template>
+    <div>
+        <div>
+            <h2 style="text-align: center;"><b>{monthName} {year}</b></h2>
+        </div>
+        <div class="calendar calendar-background">
+            <table class="slds-table slds-table_bordered calendar calendar-background">
+                <thead>
+                    <th style="width: 10rem; text-align: center;">SUNDAY</th>
+                    <th style="width: 10rem; text-align: center;">MONDAY</th>
+                    <th style="width: 10rem; text-align: center;">TUESDAY</th>
+                    <th style="width: 10rem; text-align: center;">WEDNESDAY</th>
+                    <th style="width: 10rem; text-align: center;">THURSDAY</th>
+                    <th style="width: 10rem; text-align: center;">FRIDAY</th>
+                    <th style="width: 10rem; text-align: center;">SATURDAY</th>
+                </thead>
+                <tbody >
+                    <tr>
+                        <template for:each={Row1} for:item="ele">
+                            <td style={ele.style} key={ele.id}>{ele.holiday}</br>{ele.value}</td>
+                        </template>
+                    </tr>
+                    <tr>
+                        <template for:each={Row2} for:item="ele">
+                            <td style={ele.style} key={ele.id}>{ele.holiday}</br>{ele.value}</td>
+                        </template>
+                    </tr>
+                    <tr>
+                        <template for:each={Row3} for:item="ele">
+                            <td style={ele.style} key={ele.id}>{ele.holiday}</br>{ele.value}</td>
+                        </template>
+                    </tr>
+                    <tr>
+                        <template for:each={Row4} for:item="ele">
+                            <td style={ele.style} key={ele.id}>{ele.holiday}</br>{ele.value}</td>
+                        </template>
+                    </tr>
+                    <tr>
+                        <template for:each={Row5} for:item="ele">
+                            <td style={ele.style} key={ele.id}>{ele.holiday}</br>{ele.value}</td>
+                        </template>
+                    </tr>
+                    <template if:true={sixthRow}>
+                        <tr>
+                            <template for:each={Row6} for:item="ele">
+                                <td style={ele.style} key={ele.id}>{ele.holiday}</br>{ele.value}</td>
+                            </template>
+                        </tr>
+                    </template>
+                    
+                </tbody>  
+            </table>
+        </div>
+    </div>
+</template>
