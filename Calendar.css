@@ -1,0 +1,15 @@
+.calendar {
+    font-family: Arial, sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 70rem;
+    margin: 0 auto;
+    opacity: 1;
+}
+
+.calendar-background {
+    background-image: url('https://capcom-c1-dev-ed--c.develop.vf.force.com/resource/1711696030000/Calendarimg?');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
